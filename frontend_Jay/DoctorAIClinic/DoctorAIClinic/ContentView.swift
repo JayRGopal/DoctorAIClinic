@@ -96,7 +96,7 @@ struct ContentView: View {
     
     /// Sends the current transcript (with the core prompt) to the backend.
     private func sendToBackend() {
-        guard let url = URL(string: "http://127.0.0.1:5000/chat") else {
+        guard let url = URL(string: "https://clinicapi.kyronmedical.com/chat") else {
             print("Invalid backend URL")
             return
         }
