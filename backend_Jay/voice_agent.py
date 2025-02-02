@@ -21,7 +21,7 @@ def process_chat(core_prompt, transcript):
     composite_prompt = (
         f"{core_prompt}\n\n"
         f"Here's the transcript so far:\n{transcript}\n\n"
-        "Doctor, please continue the conversation."
+        "Doctor, please continue the conversation. BE SUPER SHORT AND CONCISE."
     )
 
     # Debug: Print the composite prompt being sent to DeepSeek
@@ -30,6 +30,9 @@ def process_chat(core_prompt, transcript):
     print("=============================================")
 
     output_text = run_ollama(composite_prompt)
+    print("=== DeepSeek output is as follows ===")
+    print(output_text)
+    print("=============================================")
     response = {
         "response": output_text,
         "transcript_update": f"Doctor said: {output_text}"
