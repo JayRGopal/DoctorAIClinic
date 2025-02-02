@@ -14,6 +14,9 @@ def run_ollama(prompt):
     except subprocess.CalledProcessError as e:
         return f"Error invoking DeepSeek: {e}"
 
+def parse_output_text(s): return s.split('</think>', 1)[-1].split('Doctor:', 1)[-1].strip()
+
+
 def process_chat(core_prompt, transcript):
     """
     Builds a composite prompt for the current conversation turn.
@@ -30,12 +33,13 @@ def process_chat(core_prompt, transcript):
     print("=============================================")
 
     output_text = run_ollama(composite_prompt)
+    parsed_output = parse_output_text(output_text)
     print("=== DeepSeek output is as follows ===")
-    print(output_text)
+    print(parsed_output)
     print("=============================================")
     response = {
-        "response": output_text,
-        "transcript_update": f"Doctor said: {output_text}"
+        "response": parsed_output,
+        "transcript_update": f"Doctor said: {parsed_output}"
     }
     return response
 
