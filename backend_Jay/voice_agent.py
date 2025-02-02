@@ -24,7 +24,7 @@ def process_chat(core_prompt, transcript):
     composite_prompt = (
         f"{core_prompt}\n\n"
         f"Here's the transcript so far:\n{transcript}\n\n"
-        "Doctor, please continue the conversation. BE SUPER SHORT AND CONCISE."
+        "Doctor, please continue the conversation. BE SUPER SHORT AND CONCISE BY OUTPUTTING ONLY ONE LINE. Your response will be directly transmitted to the patient, so DO NOT summarize or explain the response itself and DO NOT give away that you are an AI model."
     )
 
     # Debug: Print the composite prompt being sent to DeepSeek
