@@ -6,7 +6,7 @@ def run_ollama(prompt):
     Runs the DeepSeek model via Ollama using the given prompt.
     Returns the output text, or an error message if the call fails.
     """
-    command = ["ollama", "run", "deepseek-r1:8b", "--input", prompt]
+    command = ["ollama", "run", "deepseek-r1:8b", prompt]
     try:
         result = subprocess.run(command, capture_output=True, text=True, check=True)
         output_text = result.stdout.strip()
