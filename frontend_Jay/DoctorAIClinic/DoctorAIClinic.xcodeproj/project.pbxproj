@@ -437,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DoctorAIClinic/Preview Content\"";
+				DEVELOPMENT_TEAM = 784Y2QRC4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to capture your voice for the Doctor AI voice chatbot.\n";
@@ -467,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DoctorAIClinic/Preview Content\"";
+				DEVELOPMENT_TEAM = 784Y2QRC4N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to capture your voice for the Doctor AI voice chatbot.\n";
