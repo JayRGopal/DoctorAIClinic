@@ -6,6 +6,7 @@ struct AnimationView: View {
 
     var body: some View {
         
+        
         VStack(spacing: 40) {
             // Company Logo at the top.
             Image("Kyron Medical Icon in Text Logo")
