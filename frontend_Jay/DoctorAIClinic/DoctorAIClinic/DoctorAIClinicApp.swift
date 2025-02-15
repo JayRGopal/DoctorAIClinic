@@ -4,7 +4,9 @@ import SwiftUI
 struct DoctorAIClinicApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                UserTypeSelectionView()
+            }
         }
     }
 }

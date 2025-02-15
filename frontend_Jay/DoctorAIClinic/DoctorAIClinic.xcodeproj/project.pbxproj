@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC15923D2D61449800313AC1 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15923C2D61449800313AC1 /* AuthManager.swift */; };
+		CC15923F2D6144AB00313AC1 /* PatientMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15923E2D6144AB00313AC1 /* PatientMainTabView.swift */; };
+		CC1592412D6144B900313AC1 /* ProviderMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1592402D6144B900313AC1 /* ProviderMainTabView.swift */; };
+		CC1592432D61458B00313AC1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1592422D61458B00313AC1 /* SignInView.swift */; };
+		CC1592452D61459600313AC1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1592442D61459600313AC1 /* SignUpView.swift */; };
+		CC1592472D6145A300313AC1 /* UserTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1592462D6145A300313AC1 /* UserTypeSelectionView.swift */; };
+		CC1592492D61467900313AC1 /* PatientHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1592482D61467900313AC1 /* PatientHomeView.swift */; };
+		CC15924B2D61468C00313AC1 /* PatientServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15924A2D61468C00313AC1 /* PatientServicesView.swift */; };
+		CC15924D2D61469900313AC1 /* PatientActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15924C2D61469900313AC1 /* PatientActivityView.swift */; };
+		CC15924F2D6146A500313AC1 /* PatientAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15924E2D6146A500313AC1 /* PatientAccountView.swift */; };
+		CC1592512D6147E500313AC1 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1592502D6147E500313AC1 /* MessageComposeView.swift */; };
+		CC1592542D61487E00313AC1 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = CC1592532D61487E00313AC1 /* SwiftUIPager */; };
 		CCC7B54B2D4F4F99000DCADE /* DoctorAIClinicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7B54A2D4F4F99000DCADE /* DoctorAIClinicApp.swift */; };
 		CCC7B54D2D4F4F99000DCADE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7B54C2D4F4F99000DCADE /* ContentView.swift */; };
 		CCC7B54F2D4F4F9B000DCADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC7B54E2D4F4F9B000DCADE /* Assets.xcassets */; };
@@ -39,6 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC15923C2D61449800313AC1 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CC15923E2D6144AB00313AC1 /* PatientMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientMainTabView.swift; sourceTree = "<group>"; };
+		CC1592402D6144B900313AC1 /* ProviderMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderMainTabView.swift; sourceTree = "<group>"; };
+		CC1592422D61458B00313AC1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		CC1592442D61459600313AC1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CC1592462D6145A300313AC1 /* UserTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeSelectionView.swift; sourceTree = "<group>"; };
+		CC1592482D61467900313AC1 /* PatientHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeView.swift; sourceTree = "<group>"; };
+		CC15924A2D61468C00313AC1 /* PatientServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientServicesView.swift; sourceTree = "<group>"; };
+		CC15924C2D61469900313AC1 /* PatientActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientActivityView.swift; sourceTree = "<group>"; };
+		CC15924E2D6146A500313AC1 /* PatientAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientAccountView.swift; sourceTree = "<group>"; };
+		CC1592502D6147E500313AC1 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
 		CCC7B5472D4F4F99000DCADE /* DoctorAIClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorAIClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC7B54A2D4F4F99000DCADE /* DoctorAIClinicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAIClinicApp.swift; sourceTree = "<group>"; };
 		CCC7B54C2D4F4F99000DCADE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1592542D61487E00313AC1 /* SwiftUIPager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +131,17 @@
 				CCC7B5782D4F563B000DCADE /* LaunchScreen.storyboard */,
 				CCC7B54A2D4F4F99000DCADE /* DoctorAIClinicApp.swift */,
 				CCC7B54C2D4F4F99000DCADE /* ContentView.swift */,
+				CC15923C2D61449800313AC1 /* AuthManager.swift */,
+				CC15923E2D6144AB00313AC1 /* PatientMainTabView.swift */,
+				CC1592402D6144B900313AC1 /* ProviderMainTabView.swift */,
+				CC1592422D61458B00313AC1 /* SignInView.swift */,
+				CC1592482D61467900313AC1 /* PatientHomeView.swift */,
+				CC15924A2D61468C00313AC1 /* PatientServicesView.swift */,
+				CC15924C2D61469900313AC1 /* PatientActivityView.swift */,
+				CC15924E2D6146A500313AC1 /* PatientAccountView.swift */,
+				CC1592442D61459600313AC1 /* SignUpView.swift */,
+				CC1592462D6145A300313AC1 /* UserTypeSelectionView.swift */,
+				CC1592502D6147E500313AC1 /* MessageComposeView.swift */,
 				CCC7B54E2D4F4F9B000DCADE /* Assets.xcassets */,
 				CCC7B5502D4F4F9B000DCADE /* Preview Content */,
 				CCC7B57A2D4F5701000DCADE /* AnimationView.swift */,
@@ -158,6 +193,9 @@
 			dependencies = (
 			);
 			name = DoctorAIClinic;
+			packageProductDependencies = (
+				CC1592532D61487E00313AC1 /* SwiftUIPager */,
+			);
 			productName = DoctorAIClinic;
 			productReference = CCC7B5472D4F4F99000DCADE /* DoctorAIClinic.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +268,9 @@
 				Base,
 			);
 			mainGroup = CCC7B53E2D4F4F98000DCADE;
+			packageReferences = (
+				CC1592522D61487E00313AC1 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
 			productRefGroup = CCC7B5482D4F4F99000DCADE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,12 +314,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1592512D6147E500313AC1 /* MessageComposeView.swift in Sources */,
+				CC15924F2D6146A500313AC1 /* PatientAccountView.swift in Sources */,
 				CCC7B57B2D4F5701000DCADE /* AnimationView.swift in Sources */,
+				CC15923D2D61449800313AC1 /* AuthManager.swift in Sources */,
 				CCC7B57F2D4F5770000DCADE /* SpeechManager.swift in Sources */,
+				CC1592412D6144B900313AC1 /* ProviderMainTabView.swift in Sources */,
+				CC1592432D61458B00313AC1 /* SignInView.swift in Sources */,
+				CC1592452D61459600313AC1 /* SignUpView.swift in Sources */,
 				CCC7B54D2D4F4F99000DCADE /* ContentView.swift in Sources */,
+				CC1592492D61467900313AC1 /* PatientHomeView.swift in Sources */,
+				CC15924B2D61468C00313AC1 /* PatientServicesView.swift in Sources */,
 				CCC7B5812D4F5782000DCADE /* Theme.swift in Sources */,
+				CC1592472D6145A300313AC1 /* UserTypeSelectionView.swift in Sources */,
 				CCC7B57D2D4F5759000DCADE /* NavigationBarModifier.swift in Sources */,
 				CCC7B54B2D4F4F99000DCADE /* DoctorAIClinicApp.swift in Sources */,
+				CC15923F2D6144AB00313AC1 /* PatientMainTabView.swift in Sources */,
+				CC15924D2D61469900313AC1 /* PatientActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +655,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC1592522D61487E00313AC1 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC1592532D61487E00313AC1 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC1592522D61487E00313AC1 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCC7B53F2D4F4F98000DCADE /* Project object */;
 }
