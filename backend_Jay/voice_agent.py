@@ -1,6 +1,8 @@
 import subprocess
 import json
 
+def parse_output_text(s): return s.split('</think>', 1)[-1].split('Doctor:', 1)[-1].strip()
+
 def run_ollama(prompt):
     """
     Runs the DeepSeek model via Ollama using the given prompt.
@@ -14,8 +16,41 @@ def run_ollama(prompt):
     except subprocess.CalledProcessError as e:
         return f"Error invoking DeepSeek: {e}"
 
-def parse_output_text(s): return s.split('</think>', 1)[-1].split('Doctor:', 1)[-1].strip()
+def run_ollama_stream(prompt):
+    """
+    Runs the DeepSeek model via Ollama using real-time streaming.
+    """
+    command = ["ollama", "run", "deepseek-r1:8b", prompt]
 
+    with subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1, universal_newlines=True) as process:
+        current_chunk = ""
+        thinking = False
+        current_word = ""  # Reset word buffer
+        while True:
+            char = process.stdout.read(1)  # Read one character at a time
+            if not char:
+                break  # Stop if there's no more output
+            
+            if char.isspace():  # Space means the word is complete
+                word = current_word.strip()  # Capture the full word
+                
+                if word:
+                    # omit thinking
+                    if "<think>" in word:
+                        thinking = True
+                        current_word = ""
+                    elif "</think>" in word:
+                        thinking = False
+                        current_word = ""
+                    elif not thinking:  # Only yield actual responses
+                        yield parse_output_text(word) + " "  # Maintain spacing
+                        current_word = ""
+            
+            else:
+                current_word += char  # Keep building the word
+
+        process.stdout.close()
+        process.wait()
 
 def process_chat(core_prompt, transcript):
     """
@@ -60,7 +95,7 @@ def process_final_summary(core_prompt, transcript):
     )
     output_text = run_ollama(composite_prompt)
     response = {
-        "final_note": output_text
+        "final_note": parse_output_text(output_text)
     }
     return response
 
